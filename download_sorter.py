@@ -51,23 +51,22 @@ def is_temporary_download(p: Path) -> bool:
 # Keys can be keywords or simple glob patterns. Values are destination folder names.
 ROUTES = {
     # keyword or glob      -> subfolder under DEST_ROOT
-    "invoice": "Finance",
-    "receipt": "Finance",
-    "tax": "Finance",
+    "4641": "CS/4641",
+    "3251": "CS/3251",
+    "4400": "CS/4400",
+    "2701": "CS/2701",
+    "*.sim": "CS/2110",
     "resume": "Resumes",
     "cover letter": "Resumes",
-    "*.png": "Images",
-    "*.jpg": "Images",
-    "*.jpeg": "Images",
-    "*.gif": "Images",
-    "report": "Reports",
-    "homework": "School",
-    "assignment": "School",
+    "*.png": "Images/Videos",
+    "*.jpg": "Images/Videos",
+    "*.jpeg": "Images/Videos",
+    "*.gif": "Images/Videos",
 }
 
 # Where to watch and where to file things
 DOWNLOADS = Path.home() / "Downloads"          # change if needed
-DEST_ROOT = Path.home() / "SortedDownloads"    # change if needed
+DEST_ROOT = Path.home()    # change if needed
 
 SETTLE_SECONDS = 2.0
 
